@@ -1,0 +1,153 @@
+      * {
+         padding: 0px;
+         margin:0px;
+         box-sizing: border-box;
+
+      }
+
+      body {
+      width: 100%;
+      height: 1024px;
+      }
+
+      .side {
+      width: 367px;
+      height: 100%;
+      background-color: cornflowerblue;
+      float:left;
+      position: relative;
+      padding-top: 76px;
+      padding-left: 110px;
+      box-sizing: border-box;
+
+      }
+
+      .main {
+      width: calc(100% - 367px);
+      height: 100%;
+      background-color: pink;
+      float:right;
+      position: relative;
+      }
+
+    .intro {
+      width: 150px;
+      height: 280px;
+      /* background-color:whitesmoke; */
+      position: absolute;
+
+    }
+
+    .profile {
+      width:150px;
+      height:150px;
+      /* background-color: darkgray; */
+      background-image: url('https://c.tenor.com/tpBsJof2_SsAAAAC/penguin-smack-head.gif');
+      background-position: 80% 70%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      }
+
+      .link {
+      width:150px;
+      height: 103px;
+      /* background-color: gray; */
+      margin-top:64px;
+      color:cornsilk;
+      font-size: 18px;
+
+      }
+
+      .image {
+      width:800px;
+      height:572px;
+      background-color:peachpuff;
+      position:relative;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      padding: 0px;
+
+      }
+
+      .pic.one {
+         width: 800px;
+         height: calc( calc(572px - 10px)/ 2);
+         background-color: gold;
+         background-image: url('https://ascii.jp/img/2010/10/22/899574/l/ed3075d2356cc984.jpg');
+         /* position: absolute; */
+         margin-bottom: 10px;
+         background-position: 60% 15%;
+         background-size: cover;
+         background-repeat: no-repeat;
+         /* -webkit-transition: opacity 0.5s ease-in-out; */
+         /* -moz-transition: opacity 0.5s ease-in-out; */
+         /* -o-transition: opacity 0.5s ease-in-out; */
+         /* transition: opacity 0.5s ease-in-out; */
+         
+      }
+
+        .pic.one:hover {
+         background-image: url('https://c.tenor.com/_4YgA77ExHEAAAAd/rick-roll.gif')}
+      /* .pics.one:nth-of-type(2):hover {
+         opacity:0;
+      } */
+
+      .pic.two {
+         /* position: absolute; */
+         width: calc( calc(800px - 10px)/ 2);
+         height: calc( calc(572px - 10px)/ 2);
+         margin-right: 10px;
+         background-color: silver;
+         float:left;
+         background-image: url('https://p1.music.126.net/3bzZkPVZubM-nPNhz9499g==/109951165443902335.jpg');
+         background-position: 35% 90%;
+         background-size: cover;
+         background-repeat: no-repeat;
+      }
+
+      @keyframes swing {
+         0% {transform:translate(10px 10px);}
+         10% {transform:translate(10px 10px);}
+         20% {transform:translate(-10px -10px);}
+         35% {transform:translate(15px 15px);}
+         50% {transform:translate(-5px -5px);}
+         65% {transform:translate(5px 5px);}
+         80% {transform:translate(-15px -15px);}
+         90% {transform:translate(2%);}
+         100% {transform:translate(-2%);}
+      }
+      .pic.two:hover{
+         transform: scale(1.3);
+         animation:swing 1s infinite;
+      }
+
+      .pic.three {
+         /* position: absolute; */
+         width: calc( calc(800px - 10px)/ 2);
+         height: calc( calc(572px - 10px)/ 2);
+         background-color: silver;
+         float:left;
+         margin-right:0px;
+         background-image: url('https://c.tenor.com/Lh9PJyQR38kAAAAC/van-darkholme-van.gif');
+         background-position: 50% 40%;
+         background-size: cover;
+         background-repeat: no-repeat;
+         transition: 0.5s;
+      }
+
+      .pic.three:hover{
+         border-radius:95%;
+         transform: scale(1.2);
+      }
+
+      a {
+         display:block;
+         width: 5px;
+         height: 30px;
+         padding:5px 0px 5px 0px;
+         margin: auto;
+         text-align:center;
+         font-size: 18px;
+         color:linen
+      }
